@@ -1,5 +1,8 @@
 ﻿namespace Oryn.Security
 {
+    /// <summary>
+    /// This class provides a method to generate a MD5 hash for a string value.
+    /// </summary>
     public class MD5Service
     {
         /// <summary>
@@ -7,6 +10,7 @@
         /// the current UTC date and time is used. The hash is returned as a hexadecimal string.
         /// </summary>
         /// <param name="value">The string value to be hashed. Defaults to an empty string.</param>
+        /// <param name="salt">The salt value to be added to the string before hashing. Defaults to an empty string.</param>
         /// <returns>A hexadecimal string representing the MD5 hash of the input value.</returns>
         public string Hash(string value = "", string salt = "")
         {

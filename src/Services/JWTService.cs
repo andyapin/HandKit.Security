@@ -1,5 +1,8 @@
 ﻿namespace Oryn.Security
 {
+    /// <summary>
+    /// The JWTService class is responsible for handling JSON Web Token (JWT) operations.
+    /// </summary>
     public class JWTService
     {
         private SecurityAlgorithm _algorithm { get; set; }
@@ -55,7 +58,7 @@
             }
             return SecurityAlgorithms.HmacSha256;
         }
-        private ClaimsPrincipal DecodeJwt(string token)
+        private ClaimsPrincipal? DecodeJwt(string token)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var validationParameters = new TokenValidationParameters
@@ -76,17 +79,16 @@
             }
             catch (Exception ex)
             {
-#if DEBUG
                 Console.WriteLine(ex);
-#endif
-                return null;
             }
+            return null;
         }
 
         /// <summary>
         /// Creates a JSON Web Token (JWT) based on the provided claims.
         /// </summary>
         /// <param name="claims">The claims to be included in the JWT.</param>
+        /// <param name="expires">The number of minutes until the token expires. Defaults to 5.</param>
         /// <returns>A string representation of the JWT.</returns>
         public string Create(IEnumerable<Claim> claims, int expires = 5)
         {
@@ -135,7 +137,7 @@
         /// </summary>
         /// <param name="token">The JSON Web Token to retrieve the ClaimsPrincipal from.</param>
         /// <returns>The ClaimsPrincipal if the token is valid, otherwise null.</returns>
-        public ClaimsPrincipal Claims(string token)
+        public ClaimsPrincipal? Claims(string token)
         {
             var validationParameters = DecodeJwt(token);
             if (validationParameters != null) return validationParameters;

@@ -1,5 +1,8 @@
 ﻿namespace Oryn.Security
 {
+    /// <summary>
+    /// This class provides methods for encrypting and decrypting strings using the Advanced Encryption Standard (AES) algorithm.
+    /// </summary>
     public class SHA256Service
     {
         private byte[] iv = new byte[16] { 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0 };
@@ -42,9 +45,7 @@
             }
             catch (Exception ex)
             {
-#if DEBUG
                 Console.WriteLine(ex);
-#endif
             }
             return string.Empty;
         }
@@ -77,9 +78,7 @@
             }
             catch (Exception ex)
             {
-#if DEBUG
                 Console.WriteLine(ex);
-#endif
             }
             return string.Empty;
         }

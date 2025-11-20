@@ -1,10 +1,24 @@
 ﻿namespace Oryn.Security
 {
-
+    /// <summary>
+    /// The OrynSecurity class is a toolkit for handling security operations.
+    /// It provides services for JWT (JSON Web Token), MD5 hashing, and SHA256 encryption and decryption.
+    /// </summary>
     public class OrynSecurity
     {
+        /// <summary>
+        /// The JWTService instance for handling JWT operations.
+        /// </summary>
         public JWTService JWT { get; set; }
+
+        /// <summary>
+        /// The MD5Service instance for handling MD5 hashing operations.
+        /// </summary>
         public MD5Service MD5 { get; set; }
+
+        /// <summary>
+        /// The SHA256Service instance for handling SHA256 encryption and decryption operations.
+        /// </summary>
         public SHA256Service SHA256 { get; set; }
 
         /// <summary>
