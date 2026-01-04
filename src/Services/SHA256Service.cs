@@ -1,4 +1,4 @@
-﻿namespace Oryn.Security
+﻿namespace HandKit.Security
 {
     /// <summary>
     /// This class provides methods for encrypting and decrypting strings using the Advanced Encryption Standard (AES) algorithm.

@@ -1,10 +1,10 @@
-﻿namespace Oryn.Security
+﻿namespace HandKit.Security
 {
     /// <summary>
     /// The OrynSecurity class is a toolkit for handling security operations.
     /// It provides services for JWT (JSON Web Token), MD5 hashing, and SHA256 encryption and decryption.
     /// </summary>
-    public class OrynSecurity
+    public class SecurityHandkit
     {
         /// <summary>
         /// The JWTService instance for handling JWT operations.
@@ -36,7 +36,7 @@
         /// audience = The audience of the JWT. Defaults to an empty string.
         /// </code>
         /// </summary>
-        public OrynSecurity(string secret)
+        public SecurityHandkit(string secret)
         {
             JWT = new JWTService(secret);
             MD5 = new MD5Service();
@@ -56,7 +56,7 @@
         /// <param name="algorithm">The security algorithm to use for signing the JWT. Defaults to SecurityAlgorithm.HmacSha256.</param>
         /// <param name="issuer">The issuer of the JWT. Defaults to an empty string.</param>
         /// <param name="audience">The audience of the JWT. Defaults to an empty string.</param>
-        public OrynSecurity(string secret, SecurityAlgorithm algorithm = SecurityAlgorithm.HmacSha256, string issuer = "", string audience = "")
+        public SecurityHandkit(string secret, SecurityAlgorithm algorithm = SecurityAlgorithm.HmacSha256, string issuer = "", string audience = "")
         {
             JWT = new JWTService(secret, algorithm, issuer, audience);
             MD5 = new MD5Service();

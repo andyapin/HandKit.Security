@@ -1,15 +1,15 @@
-# Oryn.Security
+# HandKit.Security
 
 ![icon](https://handityo.my.id/icon_nuget.png)
 
-[![NuGet](https://img.shields.io/nuget/v/Oryn.Security)](https://www.nuget.org/packages/Oryn.Security) 
+[![NuGet](https://img.shields.io/nuget/v/HandKit.Security)](https://www.nuget.org/packages/HandKit.Security) 
 [![.NET](https://img.shields.io/badge/.NET%208.0-512BD4?style=flat&logo=dotnet&label=.NET%20Core)](https://dotnet.microsoft.com/en-us/apps/maui)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-**Secure Your Data, Elevate Your Trust: Oryn.Security** 🚀
+**Secure Your Data, Elevate Your Trust: HandKit.Security** 🚀
 
-The `Oryn.Security` library provides essential security functionalities for C# applications, including working with JSON Web Tokens (JWT), generating MD5 hashes, and performing SHA-256 encryption and decryption.
+The `HandKit.Security` library provides essential security functionalities for C# applications, including working with JSON Web Tokens (JWT), generating MD5 hashes, and performing SHA-256 encryption and decryption.
 
 ## 🚀 Features
 
@@ -19,10 +19,10 @@ The `Oryn.Security` library provides essential security functionalities for C# a
 
 ## 📦 Installation
 
-To install the `Oryn.Security` library, use the NuGet package manager:
+To install the `HandKit.Security` library, use the NuGet package manager:
 
 ```sh
-dotnet add package Oryn.Security
+dotnet add package HandKit.Security
 ```
 
 ## 💡 Usage

@@ -1,4 +1,4 @@
-﻿namespace Oryn.Security
+﻿namespace HandKit.Security
 {
     /// <summary>
     /// Enum representing different security algorithms.

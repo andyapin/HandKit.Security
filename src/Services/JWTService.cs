@@ -1,4 +1,4 @@
-﻿namespace Oryn.Security
+﻿namespace HandKit.Security
 {
     /// <summary>
     /// The JWTService class is responsible for handling JSON Web Token (JWT) operations.

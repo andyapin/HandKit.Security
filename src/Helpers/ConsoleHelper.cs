@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Oryn.Security.Helpers
+namespace HandKit.Security.Helpers
 {
     internal class ConsoleHelper
     {

@@ -1,4 +1,4 @@
-﻿namespace Oryn.Security
+﻿namespace HandKit.Security
 {
     /// <summary>
     /// This class provides a method to generate a MD5 hash for a string value.
